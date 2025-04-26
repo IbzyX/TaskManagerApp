@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/calendar.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<h2>Dashboard</h2>
+<div class="grid-container">
+
+   <div class="left">
+      <a href="{{ url_for('main.upcoming_page') }}" class="heading-button">upcoming</a>
+      <div class="todo-section">
+         <h3>TO-DO</h3>
+         <div class="task-card">...</div>
+         <div class="task-actions">
+            <button>Move up</button>
+            <button>Delay</button>
+            <button>Complete</button>
+         </div>
+         <div class="task-card">...</div>
+         <div class="task-actions">
+            <button>Move up</button>
+            <button>Delay</button>
+            <button>Complete</button>
+         </div>
+         <div class="task-card">...</div>
+         <div class="task-actions">
+            <button>Move up</button>
+            <button>Delay</button>
+            <button>Complete</button>
+         </div>
+      </div>
+
+      <div class="complete-section">
+         <h3>Complete</h3>
+         <div class="task-card complete">...</div>
+         <div class="task-card complete">...</div>
+         <div class="task-card complete">...</div>
+      </div>
+   </div>
+
+   <div class="center">
+      <a href="{{ url_for('main.calendar_page') }}" class="heading-button">calendar</a>
+      
+      
+      {% include "calendar.html" %}
+   </div>
+
+   <div class="right">
+      <a href="{{ url_for('main.notes_page') }}" class="heading-button">notes</a>
+   </div>
+
+</div>
+{% endblock %}
+
+{% block script %}
+   <script src="{{ url_for('static', filename='js/calendar.js') }}"></script>
+{% endblock %}
+

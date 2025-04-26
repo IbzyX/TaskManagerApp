@@ -1,0 +1,37 @@
+<!DOCTYPE html>									
+<html lang="en"> 								
+<head> 										
+   <meta charset="UTF-8">							
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+   <title>{% block title %}Task Manager{% endblock %}</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+   {% block css %}{% endblock %} 
+
+
+</head>
+<body>
+
+   <nav class="navbar">
+      <button id="menu-toggle" class="hamburger-menu">☰</button>
+      <div id="menu-dropdown" class="menu hidden">
+         <button id="theme-toggle">🌙 Toggle Theme</button>
+      </div>
+      <h1>Task Manager</h1>
+
+
+   </nav>
+
+   <main>
+      {% block content %}{% endblock %}
+   </main>
+
+
+
+
+   <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+   {% block script %}{% endblock %}
+</body>
+
+</html>
