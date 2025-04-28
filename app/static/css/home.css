@@ -76,7 +76,7 @@ html, body {
 .task-actions button {
    flex: 1;
    padding: 8px 10px;
-   font-size: 23px;
+   font-size: 23ppx;
    border: none;
    border-radius: 4px;
    cursor: pointer;
