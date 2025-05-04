@@ -57,8 +57,21 @@ body.dark-mode .menu {
 body.dark-mode #theme-toggle {
    color: white;
 }
-h1 {
+h2 {
+   text-align: left;
+   margin-top: 20px;
+   margin-left: 50px;
+   font-size: 3rem;
+}
+.return-button {
    text-align: right;
    color: white;
-
+   padding: 10px;
+   font-weight: bold;
+   font-size: 2rem;
+   cursor: pointer;
+   text-decoration: none;
+}
+.return-button:hover {
+   background-color:#0056b3;
 }

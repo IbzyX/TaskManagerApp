@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 
 {% block title %}Task Form{% endblock %}
-
-{% block css %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/add_task.css') }}">
+{% endblock %}
 
 
 
 {% block content %}
+<h2>New Task</h2>
 
 
 
@@ -14,4 +16,6 @@
 
 
 
-{% block script %}{% endblock %}
+{% block script %}
+   <script src="{{ url_for('static', filename='js/add_task.js') }}"></script>
+{% endblock %}
