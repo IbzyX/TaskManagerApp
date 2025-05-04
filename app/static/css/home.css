@@ -84,8 +84,21 @@ html, body {
 .task-actions button:hover {
    background-color: #007bff;
 }
-
-
+.addform-button {
+   background-color: black;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   font-size: 35px;
+   margin-bottom: 20px;
+   cursor: pointer;
+   border-radius: 50px;
+   text-decoration: none;
+   text-align: center;
+}
+.addform-button:hover {
+   background-color:#0056b3;
+}
 
 
 

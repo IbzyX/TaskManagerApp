@@ -17,3 +17,7 @@ def calendar_page():
 @main.route('/notes')
 def notes_page():
     return render_template('notes.html')
+
+@main.route('/taskform')
+def Taskform_page():
+    return render_template('add_task.html')
