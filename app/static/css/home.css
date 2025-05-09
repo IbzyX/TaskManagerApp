@@ -162,6 +162,9 @@ h3 {
    text-align: center;
 
 }
+body.dark-mode .heading-button {
+   color: white;
+}
 .heading-button:hover {
    background-color:#0056b3;
 }

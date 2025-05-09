@@ -17,6 +17,10 @@
       <button id="menu-toggle" class="hamburger-menu">☰</button>
       <div id="menu-dropdown" class="menu hidden">
          <button id="theme-toggle">🌙 Toggle Theme</button>
+         <a href="{{ url_for('main.upcoming_page') }}" class="nav-link">✅ Upcoming</a>
+         <a href="{{ url_for('main.calendar_page') }}" class="nav-link">🗓️Calendar</a>
+         <a href="{{ url_for('main.notes_page') }}" class="nav-link">📝Notes</a>
+
       </div>
       <a href="{{ url_for('main.home_page') }}" class="return-button">Task Manager</a>
 

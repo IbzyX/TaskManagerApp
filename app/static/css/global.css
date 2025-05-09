@@ -6,11 +6,19 @@ body {
    color: #000000;
    transition: background-color 0.3s, color 0.3s;
 }
-
 body.dark-mode {
    background-color: #505050;
    color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
 .navbar {
    display: flex;
    align-items: center;
@@ -41,6 +49,22 @@ body.dark-mode {
    display: none;
 }
 
+
+
+
+
+
+
+
+.nav-link {
+   color: black;
+   background: none;
+   border: none;
+   font-size: 16px;
+   cursor: pointer;
+   padding: 10px;
+   text-decoration: none;
+}
 #theme-toggle {
    background: none;
    border: none;
@@ -57,6 +81,18 @@ body.dark-mode .menu {
 body.dark-mode #theme-toggle {
    color: white;
 }
+body.dark-mode .nav-link {
+   color: white;
+}
+
+
+
+
+
+
+
+
+
 h2 {
    text-align: left;
    margin-top: 20px;
@@ -73,5 +109,5 @@ h2 {
    text-decoration: none;
 }
 .return-button:hover {
-   background-color:#0056b3;
+   background-color: none;
 }
