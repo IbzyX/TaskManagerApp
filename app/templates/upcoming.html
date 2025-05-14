@@ -7,12 +7,23 @@
 {% endblock %}
 
 {% block content %}
-<h1>Upcoming Tasks</h1>
+<h2>Upcoming Tasks</h2>
 
-<div class="grid-container">
-    <div class="center">
-        <a href="{{ url_for('main.home_page') }}" class="heading-button">Back to Home</a>
-        <p>Welcome to the About Page.</p>
+<div class="grid-wrapper">
+    <div id="grid" class="grid-table">
+        <div class="grid-row">
+            <div class="grid-cell">Task Name</div>
+            <div class="grid-cell">Task Description</div>
+            <div class="grid-cell">Task Priority</div>
+            <div class="grid-cell">Task Due Date</div>
+            <div class="grid-cell">Task Complete</div>
+        </div>
     </div>
+    <button onclick="addRow()" class="add-row-button">+ Add Row</button>
 </div>
+
+{% endblock %}
+
+{% block script%}
+    <script src="{{url_for('static', filename='js/upcoming.js') }}"></script>
 {% endblock %}
