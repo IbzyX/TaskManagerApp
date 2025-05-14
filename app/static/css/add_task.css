@@ -1,5 +1,99 @@
 
+.oneline {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.stack {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   margin-top: 10px;
+ }
+.titles {
+   display: flex;
+   align-items: center;
+}
+h3 {
+   margin-left: 20px;
+   margin-right: 500px;
+   font-size: 24px;
+   text-decoration: underline;
+   padding: 10px 10px;
+}
+h4 {
+   display: flex;
+   margin-left: 60px;
+   margin-right: 75px;
+   font-size: 24px;
+   text-decoration: underline;
+   padding: 10px 10px;
+}
+.times {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+
+}
+
+
+
+
+
+
+/* Layout heading + buttons on one line */
+.heading-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+ }
+ 
+ /* Buttons next to each other */
+ .button-row {
+   display: flex;
+   gap: 8px; /* space between buttons */
+ }
+ 
+ /* Buttons stacked vertically */
+ .button-column {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   margin-top: 10px;
+ }
+ 
+ /* Button styling (shared) */
+ button {
+   margin-left: 20px;
+   padding: 6px 12px;
+   font-size: 24px;
+   border: none;
+   background-color: grey;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ button:hover {
+   background-color: #0056b3;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  .taskdropdown-menu {
+   margin-top: 200px;
     font-size: 24px;
     background: grey;
     border: none;
