@@ -7,9 +7,10 @@
 {% endblock %}
 
 {% block content %}
-<h2>Upcoming Tasks</h2>
+<h2>Tasks</h2>
 
 <div class="grid-wrapper">
+    <h3>Upcoming Task</h3>
     <div id="grid" class="grid-table">
         <div class="grid-row">
             <div class="grid-cell">Task Name</div>
@@ -21,6 +22,17 @@
         </div>
     </div>
     <button onclick="addRow()" class="add-row-button">+ Add Row</button>
+</div>
+<div class="grid-wrapper">
+    <h3>Completed Tasks</h3>
+    <div id="completed-grid" class="grid-table">
+        <div class="grid-row">
+            <div class="grid-cell">task</div>
+            <div class="grid-cell">task</div>
+            <div class="grid-cell">task</div>
+            <div class="grid-cell">task</div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

@@ -15,6 +15,9 @@
    grid-template-columns: repeat(6,1fr);
    border-bottom: 1px solid #eee;
 }
+#completed-grid .grid-row {
+   grid-template-columns: repeat(4,1fr);
+}
 .grid-cell {
    padding: 12px;
    text-align: center;
@@ -24,6 +27,7 @@
 .grid-cell:last-child {
    border-right: none;
 }
+
 
 
 
